@@ -19,7 +19,7 @@ export default function Navbar() {
             color="white"
         >
         <Flex align="center">
-            <Text fontSize="5xl" color="blue.600">
+            <Text fontSize="4xl" color="blue.600">
               LawnBot
             </Text>
         </Flex>
