@@ -1,16 +1,20 @@
 import React from 'react';
-import { Box } from "@chakra-ui/core";
+import { BrowserRouter, Switch, Route } from "react-router-dom"
+import HomeView from './components/views/HomeView'
 import './App.css';
 
 
 function App() {
   return (
-    <div className="App">
-      <Box bg="tomato" w="100%" p={4} color="white">
-        This is the Box
-      </Box>
-    </div>
-  );
+      <BrowserRouter>
+        <Switch>
+          <Route path="/">
+            <HomeView/>
+          </Route>
+        </Switch>
+    </BrowserRouter>
+  )
+  ;
 }
 
 export default App;
